@@ -3,9 +3,9 @@ BoringBudget is an easy to use homemade budget software write in C# (.Net 5.0) b
 
 Table of contents:
 1. [Introduction](#Introduction)
-2. [[#Technologies]]
-3. [[#Launch]]
-4. [[#How to contribute]]
+2. [Technologies](#Technologies)
+3. [Launch](#Launch)
+4. [How to contribute](#How to contribute)
 
 ## Introduction
 
