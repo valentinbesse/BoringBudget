@@ -5,9 +5,9 @@ Table of contents:
 1. [Introduction](#Introduction)
 2. [Technologies](#Technologies)
 3. [Launch](#Launch)
-4. [How to contribute](#How_to_contribute)
+4. [How to contribute](#How-To-Contribute)
 
-## Introduction
+## Introduction <a name="introduction"/>
 
 ## Technologies
 
