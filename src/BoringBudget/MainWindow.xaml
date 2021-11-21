@@ -3,10 +3,42 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lang="clr-namespace:BoringBudget.Language;assembly=BoringBudget.Language"
+        xmlns:lib="clr-namespace:BoringBudget.Library;assembly=BoringBudget.Library"
         xmlns:local="clr-namespace:BoringBudget"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="{x:Static lang:Resources.BoringBudget_Title}" MinHeight="450" MinWidth="800" ResizeMode="CanResizeWithGrip">
+    
+    <Grid Background="#FFFFBF92" Margin="0,0,0,-446" Width="807">
+        <Menu Margin="0,0,700,0">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="_Edit">
+                <MenuItem Command="ApplicationCommands.Copy"/>
+                <MenuItem Command="ApplicationCommands.Cut"/>
+                <MenuItem Command="ApplicationCommands.Paste"/>
+            </MenuItem>
+            <MenuItem Header="_Font">
+                <MenuItem Header="_Bold" IsCheckable="True"
+              Checked="Bold_Checked"
+              Unchecked="Bold_Unchecked"/>
+                <MenuItem Header="_Italic" IsCheckable="True"
+              Checked="Italic_Checked"
+              Unchecked="Italic_Unchecked"/>
+                <Separator/>
+                <MenuItem Header="I_ncrease Font Size"
+              Click="IncreaseFont_Click"/>
+                <MenuItem Header="_Decrease Font Size"
+              Click="DecreaseFont_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox Name="textBox1" TextWrapping="Wrap"
+         Margin="151,112,63,149" Background="{x:Null}" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.503,-10.976">
+  The quick brown fox jumps over the lazy dog.
+</TextBox>
     </Grid>
+    
 </Window>

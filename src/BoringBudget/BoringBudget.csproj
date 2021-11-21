@@ -2,9 +2,22 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <StartupObject>BoringBudget.App</StartupObject>
     <PackageProjectUrl>https://github.com/valentinbesse/BoringBudget</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Interface\" />
+    <Folder Include="View\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoringBudget.Language\BoringBudget.Language.csproj" />
+    <ProjectReference Include="..\BoringBudget.Library\BoringBudget.Library.csproj" />
+  </ItemGroup>
 </Project>
